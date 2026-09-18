@@ -16,7 +16,11 @@
         <nav class="nav-links" id="navLinks">
             <a href="#home">Beranda</a>
             <a href="#about">Tentang</a>
+            <a href="#pendidikan">Pendidikan</a>
             <a href="#skills">Keahlian</a>
+            <a href="#sertifikasi">Sertifikasi</a>
+            <a href="#dokumentasi">Dokumentasi</a>
+            <a href="#blog">Blog</a>
             <a href="#projects">Proyek</a>
             <a href="#contact">Kontak</a>
         </nav>
@@ -37,10 +41,9 @@
                 <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
             </div>
             <div class="socials">
-                <!-- TODO: isi href di bawah dengan link profil sosmed kamu -->
-                <a href="#" aria-label="GitHub" title="GitHub: ">GH</a>
-                <a href="#" aria-label="LinkedIn" title="LinkedIn: ">IN</a>
-                <a href="#" aria-label="Instagram" title="Instagram: ">IG</a>
+                <a href="https://github.com/OjanSJa" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">GH</a>
+                <a href="https://www.linkedin.com/in/muh-fauzan-arrizal-sadewa-803088425" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">IN</a>
+                <a href="https://www.instagram.com/paujannnn._/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">IG</a>
             </div>
         </div>
         <div class="hero-avatar" data-animate>
@@ -69,6 +72,8 @@
                 <ul>
                     <li><strong>Nama</strong><span>Muh. Fauzan Arrizal Sadewa</span></li>
                     <li><strong>Peran</strong><span>Junior Web Developer</span></li>
+                    <li><strong>Instansi</strong><span>SMKN 1 Jenangan Ponorogo</span></li>
+                    <li><strong>Bidang</strong><span>Rekayasa Perangkat Lunak (RPL)</span></li>
                     <li><strong>Email</strong><span>inifauzan74@gmail.com</span></li>
                     <li><strong>Domisili</strong><span>Ponorogo, Jawa Timur</span></li>
                     <li><strong>Status</strong><span>Peserta Uji Serkom</span></li>
@@ -79,8 +84,60 @@
     </div>
 </section>
 
+<!-- ================= RIWAYAT PENDIDIKAN ================= -->
+<section id="pendidikan" class="section">
+    <div class="container">
+        <h2 class="section-title" data-animate>Riwayat Pendidikan</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-animate>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-badge">SMK</span>
+                    <h3>SMKN 1 Jenangan Ponorogo</h3>
+                </div>
+            </div>
+            <div class="timeline-item" data-animate>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-badge">SMP</span>
+                    <h3>SMPN 1 Jetis Ponorogo</h3>
+                </div>
+            </div>
+            <div class="timeline-item" data-animate>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-badge">SD</span>
+                    <h3>SDN Kutukulon</h3>
+                </div>
+            </div>
+            <div class="timeline-item" data-animate>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-badge">TK</span>
+                    <h3>TK Aisyiyah Kutukulon</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PENGALAMAN BELAJAR ================= -->
+<section id="pengalaman" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title" data-animate>Pengalaman Belajar</h2>
+        <div class="experience-card" data-animate>
+            <div class="experience-icon">💼</div>
+            <div>
+                <span class="tag">PKL / Magang</span>
+                <h3>Kazuya Media Indonesia</h3>
+                <p>Melaksanakan Praktik Kerja Lapangan (PKL) / magang di Kazuya Media Indonesia sebagai bagian dari pengalaman belajar di dunia kerja nyata.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ================= SKILLS ================= -->
-<section id="skills" class="section section-alt">
+<section id="skills" class="section">
     <div class="container">
         <h2 class="section-title" data-animate>Keahlian</h2>
         <div class="skills-grid">
@@ -114,6 +171,113 @@
                 <h3>Git &amp; Version Control</h3>
                 <div class="bar"><span style="width:65%"></span></div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SERTIFIKASI ================= -->
+<!-- Cara isi: ganti src gambar di bawah dengan file sertifikat kamu di folder
+     assets/sertifikat/ (contoh: assets/sertifikat/sertifikat-1.jpg), lalu
+     ganti teks judul & penyelenggaranya. Mau nambah slot? tinggal copy 1 blok
+     <div class="cert-card">...</div> lalu paste & edit isinya. Pastikan tag
+     <img> tetap punya class="zoomable" supaya bisa diklik untuk diperbesar. -->
+<section id="sertifikasi" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title" data-animate>Sertifikasi</h2>
+        <p class="section-sub" data-animate>Sertifikat pelatihan, dan kegiatan yang pernah saya ikuti.</p>
+        <div class="grid grid-3 cert-grid">
+            <div class="cert-card" data-animate>
+                <div class="cert-image">
+                    <img src="assets/sertifikat/sertifikat-1.jpg" alt="Nama Sertifikat 1" class="zoomable" onerror="this.parentElement.innerHTML='<span>📄</span>'">
+                </div>
+                <div class="cert-body">
+                    <h3>Gamelab Indonesia</h3>
+                    <p>Dalam Rangka Kunjungan Industri Di Gamelab Indonesia · Tahun 2026</p>
+                </div>
+            </div>
+            <div class="cert-card" data-animate>
+                <div class="cert-image">
+                    <img src="assets/sertifikat/sertifikat-2.jpg" alt="Nama Sertifikat 2" class="zoomable" onerror="this.parentElement.innerHTML='<span>📄</span>'">
+                </div>
+                <div class="cert-body">
+                    <h3>Kazuya Media Indonesia</h3>
+                    <p>Dalam Rangka Magang Atau PKL Di Kazuya Media Indonesia · Tahun 2026</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DOKUMENTASI KEGIATAN ================= -->
+<!-- Cara isi: ganti src gambar dengan file foto kamu di folder
+     assets/dokumentasi/ (contoh: assets/dokumentasi/kegiatan-1.jpg), lalu
+     ganti teks caption-nya. Mau nambah foto? copy 1 blok
+     <div class="gallery-item">...</div> lalu paste & edit. -->
+<section id="dokumentasi" class="section">
+    <div class="container">
+        <h2 class="section-title" data-animate>Dokumentasi Kegiatan</h2>
+        <p class="section-sub" data-animate>Momen-momen kegiatan yang pernah saya ikuti.</p>
+        <div class="gallery-grid" data-animate>
+            <div class="gallery-item">
+                <img src="assets/dokumentasi/kegiatan-1.jpg" alt="Dokumentasi kegiatan 1" onerror="this.parentElement.innerHTML='<span>🖼️</span>'">
+                <span class="gallery-caption">Contoh game yang dibuat oleh Gamelab Indonesia</span>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/dokumentasi/kegiatan-2.jpg" alt="Dokumentasi kegiatan 2" onerror="this.parentElement.innerHTML='<span>🖼️</span>'">
+                <span class="gallery-caption">Logo Gamelab Indonesia di kantor</span>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/dokumentasi/kegiatan-3.jpg" alt="Dokumentasi kegiatan 3" onerror="this.parentElement.innerHTML='<span>🖼️</span>'">
+                <span class="gallery-caption">Tim dari Gamelab Indonesia menjelaskan tentang singkat Gamelab Indonesia</span>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/dokumentasi/kegiatan-4.jpg" alt="Dokumentasi kegiatan 4" onerror="this.parentElement.innerHTML='<span>🖼️</span>'">
+                <span class="gallery-caption">Suasana di lobby Gamelab Indonesia</span>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/dokumentasi/kegiatan-5.jpg" alt="Dokumentasi kegiatan 5" onerror="this.parentElement.innerHTML='<span>🖼️</span>'">
+                <span class="gallery-caption">Ruang rapat tim Gamelab Indonesia</span>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/dokumentasi/kegiatan-6.jpg" alt="Dokumentasi kegiatan 6" onerror="this.parentElement.innerHTML='<span>🖼️</span>'">
+                <span class="gallery-caption">Ruang kerja tim Gamelab Indonesia</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= BLOG ================= -->
+<!-- Cara nambah artikel baru: buat file HTML baru di folder artikel/
+     (bisa copy artikel/pkl-di-kazuya-media-indonesia.html sebagai contoh),
+     lalu tambahkan 1 blok <a class="blog-card">...</a> baru di bawah ini
+     yang mengarah ke file artikel barunya. -->
+<section id="blog" class="section section-alt">
+    <div class="container">
+        <h2 class="section-title" data-animate>Artikel Blog</h2>
+        <p class="section-sub" data-animate>Catatan dan pengalaman yang saya tulis selama belajar jadi web developer.</p>
+        <div class="grid grid-3 blog-grid">
+            <a href="artikel/pkl-di-kazuya-media-indonesia.html" class="blog-card" data-animate>
+                <div class="blog-thumb">
+                    <img src="assets/blog/pkl-kazuya.jpg" alt="PKL di Kazuya Media Indonesia" onerror="this.parentElement.innerHTML='<span>📝</span>'">
+                </div>
+                <div class="blog-body">
+                    <span class="tag">PKL / Magang</span>
+                    <h3>PKL di Kazuya Media Indonesia</h3>
+                    <p>Cerita pengalaman PKL sambil belajar Laravel, database, dan pola MVVM di dunia kerja nyata.</p>
+                    <span class="blog-readmore">Baca selengkapnya →</span>
+                </div>
+            </a>
+            <a href="artikel/dasar-dasar-web-development-frontend-backend.html" class="blog-card" data-animate>
+                <div class="blog-thumb">
+                    <img src="assets/blog/dasar-web-development.jpg" alt="Dasar-Dasar Web Development: Frontend dan Backend" onerror="this.parentElement.innerHTML='<span>📝</span>'">
+                </div>
+                <div class="blog-body">
+                    <span class="tag">Belajar / Web Development</span>
+                    <h3>Dasar-Dasar Web Development: Frontend dan Backend</h3>
+                    <p>Rangkuman konsep dasar frontend dan backend, teknologi yang digunakan, serta bagaimana keduanya saling terhubung dalam sebuah aplikasi web.</p>
+                    <span class="blog-readmore">Baca selengkapnya →</span>
+                </div>
+            </a>
         </div>
     </div>
 </section>
@@ -154,23 +318,88 @@
 <section id="contact" class="section section-alt">
     <div class="container contact-inner">
         <h2 class="section-title" data-animate>Mari Terhubung</h2>
-        <p class="section-sub" data-animate>Tertarik berkolaborasi atau ingin berdiskusi? Hubungi saya melalui form di bawah ini.</p>
-        <form class="contact-form" data-animate onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah diterima (demo form statis).');">
-            <div class="form-row">
-                <label>Nama<input type="text" placeholder="Nama Anda" required></label>
-                <label>Email<input type="email" placeholder="email@contoh.com" required></label>
+        <p class="section-sub" data-animate>Tertarik berkolaborasi atau ingin berdiskusi? Hubungi saya melalui form atau kontak di bawah ini.</p>
+
+        <div class="contact-layout">
+            <div class="contact-info-card" data-animate>
+                <h3>Informasi Kontak</h3>
+                <ul class="contact-info-list">
+                    <li>
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <a href="https://wa.me/6288298164997" target="_blank" rel="noopener">0882-9816-4997</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:inifauzan74@gmail.com">inifauzan74@gmail.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="contact-icon">🏫</span>
+                        <div>
+                            <strong>Sekolah</strong>
+                            <span>SMKN 1 Jenangan, Ponorogo</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="contact-socials">
+                    <a href="https://github.com/OjanSJa" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/muh-fauzan-arrizal-sadewa-803088425" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://www.instagram.com/paujannnn._/" target="_blank" rel="noopener">Instagram</a>
+                </div>
             </div>
-            <label>Pesan<textarea rows="5" placeholder="Tulis pesan Anda..." required></textarea></label>
-            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-        </form>
+
+            <form class="contact-form" data-animate onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah diterima (demo form statis).');">
+                <div class="form-row">
+                    <label>Nama<input type="text" placeholder="Nama Anda" required></label>
+                    <label>Email<input type="email" placeholder="email@contoh.com" required></label>
+                </div>
+                <label>Pesan<textarea rows="5" placeholder="Tulis pesan Anda..." required></textarea></label>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
     </div>
 </section>
 
 <footer class="site-footer">
-    <div class="container">
-        <p>© <span id="year"></span> Muh. Fauzan Arrizal Sadewa · Dibuat untuk Uji Serkom Skema Junior Web Developer</p>
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <a href="#home" class="brand">&lt;Dev/&gt;</a>
+            <p>Muh. Fauzan Arrizal Sadewa<br>Junior Web Developer</p>
+        </div>
+        <div class="footer-nav">
+            <h4>Navigasi</h4>
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#skills">Keahlian</a>
+            <a href="#sertifikasi">Sertifikasi</a>
+            <a href="#dokumentasi">Dokumentasi</a>
+            <a href="#blog">Blog</a>
+            <a href="#projects">Proyek</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        <div class="footer-socials">
+            <h4>Ikuti Saya</h4>
+            <div class="socials">
+                <a href="https://github.com/OjanSJa" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">GH</a>
+                <a href="https://www.linkedin.com/in/muh-fauzan-arrizal-sadewa-803088425" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">IN</a>
+                <a href="https://www.instagram.com/paujannnn._/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">IG</a>
+            </div>
+        </div>
     </div>
+    <p class="copyright">© <span id="year"></span> Muh. Fauzan Arrizal Sadewa - Dibuat untuk Uji Serkom Skema Junior Web Developer  - Contact Me inifauzan74@gmail.com / 088298164997 </p>
 </footer>
+
+<!-- ================= LIGHTBOX SERTIFIKAT ================= -->
+<div id="cert-lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Tutup">&times;</button>
+    <img src="" alt="" class="lightbox-img">
+</div>
 
 <script src="js/script.js"></script>
 </body>

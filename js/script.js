@@ -53,4 +53,37 @@ document.addEventListener('DOMContentLoaded', () => {
             a.style.color = a.getAttribute('href') === '#' + current ? '#e9e9f2' : '';
         });
     });
+
+    // Lightbox: klik gambar sertifikat (atau gambar lain dengan class "zoomable") untuk memperbesar
+    const lightbox = document.getElementById('cert-lightbox');
+    const lightboxImg = lightbox ? lightbox.querySelector('.lightbox-img') : null;
+    const lightboxClose = lightbox ? lightbox.querySelector('.lightbox-close') : null;
+
+    function openLightbox(img) {
+        if (!lightbox || !lightboxImg) return;
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt || '';
+        lightbox.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        if (!lightbox) return;
+        lightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.zoomable').forEach(img => {
+        img.addEventListener('click', () => openLightbox(img));
+    });
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+    }
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
 });

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dasar-Dasar Web Development: Frontend dan Backend - Blog Muh. Fauzan Arrizal Sadewa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container navbar-inner">
+        <a href="../index.html#home" class="brand">&lt;Dev/&gt;</a>
+        <nav class="nav-links">
+            <a href="../index.html#home">Beranda</a>
+            <a href="../index.html#blog">Blog</a>
+            <a href="../index.html#contact">Kontak</a>
+        </nav>
+    </div>
+</header>
+
+<article class="section article-page">
+    <div class="container article-container">
+        <a href="../index.html#blog" class="back-to-catalog">← Kembali ke Blog</a>
+
+        <span class="tag">Belajar / Web Development</span>
+        <h1 class="article-title">Dasar-Dasar Web Development: Frontend dan Backend</h1>
+        <p class="article-meta">Ditulis oleh Muh. Fauzan Arrizal Sadewa · Catatan Belajar</p>
+
+        <div class="article-featured-image">
+            <img src="../assets/blog/dasar-web-development.jpg" alt="Dasar-Dasar Web Development: Frontend dan Backend" onerror="this.parentElement.style.display='none'">
+        </div>
+
+        <div class="article-content">
+            <p>Sebelum terjun lebih jauh membangun proyek website, penting bagi saya untuk memahami konsep dasar dari pengembangan web itu sendiri. Secara umum, web development terbagi menjadi dua sisi besar yang saling melengkapi, yaitu <strong>frontend</strong> dan <strong>backend</strong>. Keduanya bekerja sama membentuk sebuah aplikasi web yang utuh, mulai dari tampilan yang dilihat pengguna hingga proses di baliknya yang tidak terlihat.</p>
+
+            <h2>Apa Itu Frontend?</h2>
+            <p>Frontend adalah bagian dari website yang langsung berinteraksi dengan pengguna, atau biasa disebut <strong>client-side</strong>. Semua yang tampil di layar browser seperti tata letak, warna, tombol, formulir, dan animasi merupakan hasil kerja dari frontend. Tiga teknologi dasar yang menjadi fondasi frontend adalah:</p>
+            <ul>
+                <li><strong>HTML (HyperText Markup Language)</strong> — digunakan untuk menyusun struktur dan konten halaman, seperti judul, paragraf, gambar, dan tabel.</li>
+                <li><strong>CSS (Cascading Style Sheets)</strong> — digunakan untuk mengatur tampilan visual, mulai dari warna, jarak antar elemen, hingga membuat tampilan responsif di berbagai ukuran layar.</li>
+                <li><strong>JavaScript</strong> — digunakan untuk menambahkan interaktivitas, seperti validasi formulir, animasi, hingga mengambil data dari server tanpa perlu memuat ulang halaman.</li>
+            </ul>
+            <p>Selain teknologi dasar tersebut, saat ini banyak pengembang frontend juga menggunakan framework atau library seperti React, Vue, atau Bootstrap untuk mempercepat proses pembangunan tampilan yang rapi dan konsisten.</p>
+
+            <h2>Apa Itu Backend?</h2>
+            <p>Berbeda dengan frontend, backend adalah bagian yang bekerja di sisi server atau biasa disebut <strong>server-side</strong>, dan tidak terlihat langsung oleh pengguna. Backend bertugas mengolah logika bisnis, mengelola data, serta memastikan permintaan dari frontend diproses dan dijawab dengan benar. Beberapa komponen penting dalam backend antara lain:</p>
+            <ul>
+                <li><strong>Bahasa pemrograman server</strong>, seperti JavaScript (Node.js), PHP, Python, atau Java, yang digunakan untuk menulis logika aplikasi.</li>
+                <li><strong>Database</strong>, seperti MySQL atau MongoDB, yang digunakan untuk menyimpan dan mengelola data secara terstruktur.</li>
+                <li><strong>API (Application Programming Interface)</strong>, yang menjadi jembatan komunikasi antara frontend dan backend, biasanya dalam bentuk REST API yang mengirim dan menerima data dalam format JSON.</li>
+            </ul>
+            <p>Saat mengerjakan proyek toko rajut untuk Uji Serkom, saya menggunakan Node.js dengan Express sebagai backend, ditambah MySQL sebagai database, untuk mengelola data produk, kategori, hingga pesanan pelanggan.</p>
+
+            <h2>Bagaimana Frontend dan Backend Saling Terhubung</h2>
+            <p>Alur kerja sederhananya dimulai ketika pengguna membuka website melalui browser. Frontend akan menampilkan halaman dan menerima interaksi dari pengguna, misalnya saat mengisi formulir atau menekan tombol "Beli". Data tersebut kemudian dikirim ke backend melalui permintaan HTTP. Backend akan memproses permintaan itu, misalnya menyimpan data ke database atau mengambil data produk, lalu mengirimkan hasilnya kembali ke frontend untuk ditampilkan kepada pengguna. Proses bolak-balik inilah yang membuat sebuah website terasa "hidup" dan interaktif.</p>
+
+            <h2>Kesimpulan</h2>
+            <p>Memahami dasar-dasar frontend dan backend menjadi bekal penting sebelum membangun aplikasi web yang lebih kompleks. Frontend berfokus pada bagaimana sebuah website terlihat dan terasa oleh pengguna, sementara backend berfokus pada bagaimana data diolah dan dikelola di balik layar. Dengan memahami peran keduanya, saya jadi lebih mudah menentukan teknologi yang tepat serta memahami alur kerja aplikasi secara menyeluruh, sebagai bekal menuju profesi Junior Web Developer.</p>
+        </div>
+
+        <a href="../index.html#blog" class="back-to-catalog back-to-catalog-bottom">← Kembali ke Blog</a>
+    </div>
+</article>
+
+<footer class="site-footer">
+    <div class="container">
+        <p class="copyright">© <span id="year"></span> Muh. Fauzan Arrizal Sadewa · Dibuat untuk Uji Serkom Skema Junior Web Developer</p>
+    </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
